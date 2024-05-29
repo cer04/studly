@@ -1,0 +1,851 @@
+header {
+    background: rgba(87, 47, 47, 0);
+    background-image: url(images/best.png);
+    background-position: fixed;
+    background-size: 110%;
+    color: rgb(233, 211, 211);
+    height: 1000px;
+    text-align: center;
+    margin: 0px;
+    padding: 2px;
+    padding-right: 200px;
+}
+.HeadStudlyWord{
+    font: size 200%;
+    color: #FF7F50;
+    text-align: center;
+}
+
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(180deg, #007FFF,#6A5ACD , #FF7F50  ); /* Background gradient */
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+/*lora custome is the custpm,ed font i took it from the google fonts website */
+.lora-custom {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* You can use values like 400, 500, 600, 700 */
+    font-style: normal; /* Change to italic if needed */
+}
+
+
+/*features-home*/
+
+.mainfe {
+    list-style: none;
+    padding: 0;
+}
+
+.features-section {
+    display: inline-block;
+    
+}
+
+.features-list {
+    flex: 0; /* Takes remaining space */ 
+    
+}
+
+.features-list ul {
+    list-style: none; /* Remove bullet points */
+}
+.features-list h1{
+    color: #fff;
+    font-size: 80px;
+}
+.features-list h3{
+    color: #fff;
+    font-size: 30px;
+}
+.image-section {
+    flex: 0;
+    margin-left: 100px; /* image */
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imgstudlylogo{
+    position:relative;
+    top: 1px;
+    left: 1500px;
+}
+.read-more-btn {
+    border: 1px solid white; /* Thin white border */
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text color */
+    padding: 20px 40px; /* Increased padding for the button */
+    font-size: 20px; /* Increased font size */
+    cursor: pointer; /* Cursor style */
+    outline: none; /* Remove default focus outline */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition effect */
+}
+
+.read-more-btn:hover {
+    background-color: white; /* Change background color on hover */
+    color: #007FFF; /* Change text color on hover */
+    border-color: white; /* Change border color on hover */
+}
+
+/*features-home*/
+
+/*bar*/
+.Bar {
+    
+    list-style: none;
+    margin-left: 30px;
+    padding: 60px;
+    display: flex;
+    justify-content: left;
+}
+
+.Bar li {
+    display: inline;
+    margin-right: 20px;
+}
+.Bar li a {
+    display: block;
+    color: 007FFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.8s ease;
+}
+
+.Bar li a:hover {
+    color: #ea4c89;
+}
+
+.Bar li:last-child {
+    margin-right: 0;
+}
+@media only screen and (max-width: 540px) {
+    .Bar {
+    list-style: none;
+    margin-left: 110px;
+    padding: 65px;
+    display: flex;
+    justify-content: center;
+    }
+
+    .Bar li {
+        margin-right: 10px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .Bar {
+    list-style: none;
+    margin-left: 200px;
+    padding: 65px;
+    display: flex;
+    justify-content: center;
+    }
+
+    .Bar li {
+        margin-right: 10px;
+    }
+}
+/*bar*/
+
+/* Style the features */
+.Bar li a {
+    /*text-decoration:#6A5ACD; */
+    color:#FF7F50; 
+}
+
+.Bar li:nth-child(1) a:hover {
+    color: #007FFF; 
+    font-weight: bold;
+    text-decoration: underline;
+}
+.Bar li:nth-child(2) a:hover {
+    color: #007FFF;  
+    font-weight: bold;
+    text-decoration: underline;
+}
+.Bar li:nth-child(3) a:hover {
+    color: #007FFF;  
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+.Bar li:nth-child(4) a:hover {
+    color: rgb(0, 187, 255); 
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+.logo {
+    background-color: rgba(240, 248, 255, 0);
+    background-size: 300px;
+    background-repeat:no-repeat ;
+    display: inline-block;
+    height: 200px;
+    position: relative;
+    text-indent: -99999px;
+    top: -150px;
+    width: 300px;
+}
+.features ul{
+    color: rgb(255, 0, 0);
+    background-color: rgb(253, 0, 0);
+    display: inline-block;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Main content styles */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+figure {
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.8s ease;
+}
+
+figure:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+img {
+    /*border-radius: 15px 15px 0 0;*/
+    transition: transform 0.8s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+figcaption {
+    padding: 15px;
+}
+
+/* Typography */
+h1 {
+    color: #33333300;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #444;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #666;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+h5 {
+    color: #888;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Cursor animation */
+.cursor {
+    width: 12px;
+    height: 12px;
+    background-color: #ea4c89;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    transition: transform 0.8s ease;
+}
+
+/* Feature card styles */
+.Randoms, .Coursle, .Examle, .Doctorle, .Workle {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff00;
+    transition: box-shadow 0.8s ease;
+}
+
+.Randoms:hover, .Coursle:hover, .Examle:hover, .Doctorle:hover, .Workle:hover {
+    box-shadow: 0 12px 24px rgb(0, 0, 0);
+}
+
+.Randoms img, .Coursle img, .Examle img, .Doctorle img, .Workle img {
+    width: 340px; /* Set the initial width of the images */
+    height: auto; /* Ensure aspect ratio is maintained */
+    border-radius: 15px 15px 0 0; /* Apply border radius to match card */
+    transition: transform 0.8s ease; /* Add a transition effect */
+}
+
+/* Improved hover effect on feature cards */
+.Randoms:hover img, .Coursle:hover img, .Examle:hover img, .Doctorle:hover img, .Workle:hover img {
+    height: 200px;
+    width: 200px;
+}
+
+.Randoms:hover figcaption, .Coursle:hover figcaption, .Examle:hover figcaption, .Doctorle:hover figcaption, .Workle:hover figcaption {
+    background-color: #f2f2f2;
+}
+
+
+/* Style the features */
+
+/*sign in style*/
+
+.signin-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 10000px;
+    width: 100%;
+    background-color: #f5f5f500; /* Light gray for container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.description {
+    max-width: 100%;
+}
+
+.description h2 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 1em;
+    color: #ffffff;
+}
+
+.signin-container {
+    max-width: 45%;
+    width: 100%;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.signin-container.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hfsocial {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sign {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sign li {
+    margin-bottom: 15px;
+}
+
+.emailsign,
+.passsign {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #fff;
+}
+
+.sign button {
+    width: 100%;
+    padding: 10px;
+    background-color: #005ec2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.7s ease;
+}
+
+.sign button:hover {
+    background-color: #000000;
+}
+/*sign in style*/
+
+/*Enroll style */
+.why_enroll {
+    text-align: center;
+    margin: 20px 0;
+    color: #f1f1f1;
+    display: inline-block;
+    font-size: 40px;
+}
+
+.why_enroll h1 {
+    color: #f1f1f1;
+}
+
+.enroll-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.enroll-item {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: rgb(239, 239, 239);
+    width: 30%;
+    min-width: 250px;
+}
+
+.enroll-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.enroll-item h1 {
+    color: white;
+    font-size: 42px;
+}
+
+.first_enroll enroll-item {
+    left: 830px;
+    top: 80px;
+}
+
+.second_enroll enroll-item {
+    top: 130px;
+}
+
+.third_enroll enroll-item {
+    left: 1250px;
+    bottom: 100px;
+}
+
+.enroll-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .enroll-item {
+        width: 45%;
+        margin: 10px 0;
+    }
+    .first_enroll, .third_enroll {
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .enroll-item {
+        width: 90%;
+        margin: 10px 0;
+    }
+    .first_enroll, .third_enroll {
+        left: 0;
+    }
+}
+
+.enroll-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.enroll-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/*Enroll style */
+
+/*footer settings*/
+
+/*main style*/
+
+.foot{
+    background-color: #ff6b6b81; 
+    display: flex;
+    width: 100%;
+    
+}
+
+footer menu ul{
+    display: inline-block;
+}
+
+.Binfo{
+    display: flexbox;
+    padding-left: 100px;
+    list-style: none;
+}
+.fmenu{
+    list-style: none;
+}
+.fsocials{
+    list-style: none;
+}
+.hfsocial{
+    font-size: 25px;
+}
+
+.phonenumber{
+    color: #fff;
+}
+
+.address{
+    color: #fff;
+}
+
+.email{
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+.facbook{
+    color: #fff;
+}
+.instagram{
+    color: #fff;
+}
+.X{ 
+    color: #fff;
+}
+.ToUp{
+    color: #fff;
+}
+.mabout{
+    color: #fff;
+}
+.mfeatures{
+    color: #fff;
+    text-decoration: none;
+}
+
+.line{
+    border: 2px solid black;
+    margin: 20px 0;
+    width: 40%;
+}
+
+footer {
+    background-color: #00000059;
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-left, .footer-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .company-logo {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+  }
+  .company-name {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .big-words {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+  .contact-info {
+    margin-right: 20px;
+  }
+  .divider {
+    border-right: 1px solid #fff;
+    height: 300px;
+    margin-left: 600px;
+  }
+  .contact-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+  }
+.menu li {
+    
+  margin-bottom: 10px;
+  padding: auto;
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-right{
+    background-color: rgba(255, 235, 205, 0);
+    align-items: flex-start;
+    margin-right: 200px;
+  }
+/*main style*/
+
+
+/*footer settings*/
+
+/* width */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar handle and track */
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+    width: 5px;
+    background: #f1f1f1; /* Background color of the scrollbar track */
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+::-webkit-scrollbar {
+    width: 2.5px; 
+}
+
+/* about us style */
+
+/* Styles for About Us Content */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start of the container */
+    padding: 50px 20px;
+    color: white; /* Make the font color white */
+    background-color: #33333300; /* Optional: background color for contrast */
+}
+
+.story-section {
+    flex: 1; /* Ensure the story section takes up available space */
+    margin-right: 20px; /* Add space between the text and the image */
+    text-align:center /* Ensure text alignment is in the middle */
+}
+
+.story-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white; /* Ensure the heading color is white */
+}
+
+.story-section p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.8; /* Increase line height for better readability */
+    color: white; /* Ensure the paragraph color is white */
+}
+
+.signatures {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px; /* Add some space above the signatures */
+}
+
+.signature {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.signature img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px; /* Add space below the image */
+}
+
+.signature p {
+    color: white; /* Ensure the signature text color is white */
+}
+
+.image-section {
+    max-width: 45%; /* Ensure the image section doesn't exceed 45% of the container width */
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0; /* Prevent shrinking of the image section */
+    text-align: right; /* Ensure image alignment is right */
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story-section, .image-section {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .signatures {
+        justify-content: center;
+    }
+
+    .signature {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* about us style */
+/*---------------------------------------------------OUR CLients page---------------------------------------------------*/
+/*style for boxes*/
+.container {
+    color: #fff;
+    padding: 20px;
+}
+
+.special-clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.special-client {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.special-client h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.special-client p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.special-client:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.AAU{
+    display: inline-block;
+    position: relative;
+    left:40px;
+    bottom: 32px;
+    width:310px;
+    height:310px;
+}
+
+.AAU-h3{
+    display: inline-block;
+    position: relative;
+    top: 9px;
+}
+
+.BJU{
+    display: inline-block;
+    position: relative;
+    left: 27px;
+    width:300px;
+    height:300px;
+}
+
+.BJU-h3{
+    display: inline-block;
+    position: relative;
+    top: 20px;
+}
+
+.BAU{
+    display: inline-block;
+    position: relative;
+    left:12px;
+    bottom: 15px;
+    width:350px;
+    height:330px;
+}
+.BAU-h3{
+    display: inline-block;
+    position: relative;
+    bottom:5px;
+}
+
+.JU{
+    display: inline-block;
+    position: relative;
+    left:50px;
+    width:310px;
+    height:310px;
+}
+
+.JU-h3{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.description{
+    color: #ffffff;
+}
+/*style for boxes*/
+
+/*---------------------------------------------------OUR CLients page end---------------------------------------------------*/
+/*test test */
+
+
+
+
+
+
+/*test test */
